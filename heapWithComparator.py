@@ -42,7 +42,7 @@ class heap:
             self.x[1] = self.x[i]
             self.x[i] = ith_max
             self.n -= 1
-            self.sink(1)   #better call "sink" here but lets do this the lazy way
+            self.sink(1)   
         print(*self.x[1:])
                         
 
