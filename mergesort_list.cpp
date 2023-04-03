@@ -37,5 +37,22 @@ int main()
     //    {
     //        std::cout << arr[i] << ' ';
     //    }
+
+    //You can advance one by one or by i
+    for (int i = 0; i < arr.size(); ++i)
+    {
+        auto it = arr.begin();
+        std::advance(it, i);
+        std::cout << *it << ' ';
+    }
+
+    std::cout << '\n';
     
+    auto it = arr.begin();
+    for (int i = 0; i < arr.size(); ++i)
+    {
+        std::cout << *it << ' ';
+        it = std::next(it);
+    }
+
 }
